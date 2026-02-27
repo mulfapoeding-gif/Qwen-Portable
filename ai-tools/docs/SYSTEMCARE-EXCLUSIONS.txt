@@ -1,0 +1,24 @@
+# Advanced SystemCare - Exclusion List
+# Add these paths to SystemCare's exclusion/ignore list
+
+# PowerShell Profile (CRITICAL)
+C:\Users\mulfa\OneDrive\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+
+# AI Tools Configuration
+C:\Users\mulfa\.ollama\.env
+C:\Users\mulfa\.lmstudio\settings.json
+C:\Users\mulfa\.lmstudio\user-model-configs\
+C:\Users\mulfa\.lmstudio\models\imported-models\uncategorized\ai-tools\
+
+# Python AI Packages
+C:\Users\mulfa\AppData\Local\Programs\Python\Python312\Lib\site-packages\aider_chat\
+C:\Users\mulfa\AppData\Local\Programs\Python\Python312\Lib\site-packages\langchain\
+C:\Users\mulfa\AppData\Local\Programs\Python\Python312\Lib\site-packages\autogen\
+C:\Users\mulfa\AppData\Local\Programs\Python\Python312\Lib\site-packages\gradio\
+C:\Users\mulfa\AppData\Local\Programs\Python\Python312\Lib\site-packages\duckduckgo_search\
+
+# Git Repositories
+C:\Users\mulfa\.lmstudio\models\imported-models\uncategorized\ai-tools\safe-workspace\.git\
+
+# Ollama Models (LARGE!)
+C:\Users\mulfa\.ollama\models\

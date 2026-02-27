@@ -1,0 +1,82 @@
+# Model Configuration for AI Orchestrator
+# All models located in: C:\Users\mulfa\.lmstudio\models\imported-models\uncategorized
+
+MODELS:
+  # Primary Coding Models
+  coder_large:
+    name: "MyCopilot CodeLlama"
+    path: "imported-models/uncategorized/mycopilot-codellama.gguf"
+    full_path: "C:/Users/mulfa/.lmstudio/models/imported-models/uncategorized/mycopilot-codellama.gguf"
+    size: "8B"
+    vram: "4.45 GB"
+    load_time: "~15 seconds"
+    best_for: "Large code projects, complex generation"
+    
+  coder_reasoning:
+    name: "Bootes Qwen3 Coder Reasoning"
+    path: "imported-models/uncategorized/bootes-qwen3_coder-reasoning-q4_k_m.gguf"
+    full_path: "C:/Users/mulfa/.lmstudio/models/imported-models/uncategorized/bootes-qwen3_coder-reasoning-q4_k_m.gguf"
+    size: "4B"
+    vram: "2.33 GB"
+    load_time: "~12 seconds"
+    best_for: "Reasoning tasks, code analysis"
+    
+  coder_fast:
+    name: "Qwen Coder Unlimited"
+    path: "imported-models/uncategorized/qwen-coder-unlimited.q4_k_m.gguf"
+    full_path: "C:/Users/mulfa/.lmstudio/models/imported-models/uncategorized/qwen-coder-unlimited.q4_k_m.gguf"
+    size: "1.5B"
+    vram: "940 MB"
+    load_time: "~5 seconds"
+    best_for: "Quick tasks, simple code"
+    
+  coder_balanced:
+    name: "Qwen2.5 Coder 3B"
+    path: "imported-models/uncategorized/qwen2.5-coder-3b-instruct-q4_k_m.gguf"
+    full_path: "C:/Users/mulfa/.lmstudio/models/imported-models/uncategorized/qwen2.5-coder-3b-instruct-q4_k_m.gguf"
+    size: "3B"
+    vram: "1.80 GB"
+    load_time: "~8 seconds"
+    best_for: "Balanced performance"
+
+  # Alternative Models
+  mistral:
+    name: "Mistral 7B Instruct"
+    path: "imported-models/uncategorized/mistral-7b-instruct-v0.1.q3_k_s.gguf"
+    full_path: "C:/Users/mulfa/.lmstudio/models/imported-models/uncategorized/mistral-7b-instruct-v0.1.q3_k_s.gguf"
+    size: "7B"
+    vram: "2.95 GB"
+    
+  wizard:
+    name: "WizardLM 7B Uncensored"
+    path: "imported-models/uncategorized/wizardlm-7b-uncensored.q3_k_s.gguf"
+    full_path: "C:/Users/mulfa/.lmstudio/models/imported-models/uncategorized/wizardlm-7b-uncensored.q3_k_s.gguf"
+    size: "7B"
+    vram: "2.75 GB"
+
+# Currently Loaded Models
+LOADED:
+  - "imported-models/uncategorized/mycopilot-codellama.gguf"
+  - "imported-models/uncategorized/bootes-qwen3_coder-reasoning-q4_k_m.gguf"
+  - "imported-models/uncategorized/qwen-coder-unlimited.q4_k_m.gguf"
+
+# LM Studio Server
+LM_STUDIO:
+  base_url: "http://localhost:1234/v1"
+  models_endpoint: "/models"
+  chat_endpoint: "/chat/completions"
+
+# Ollama (for future integration)
+OLLAMA:
+  base_url: "http://localhost:11434/v1"
+  models_endpoint: "/tags"
+  chat_endpoint: "/chat/completions"
+  status: "Installed, PATH needs update"
+
+# Model Selection Guide
+SELECTION_GUIDE:
+  complex_reasoning: "coder_reasoning (Bootes Qwen3)"
+  code_generation: "coder_large (CodeLlama 8B)"
+  quick_tasks: "coder_fast (Qwen 1.5B)"
+  balanced: "coder_balanced (Qwen2.5 3B)"
+  uncensored: "wizard (WizardLM 7B)"

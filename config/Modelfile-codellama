@@ -1,0 +1,9 @@
+FROM C:/Users/mulfa/.lmstudio/models/imported-models/uncategorized/mycopilot-codellama.gguf
+
+# Set parameters
+PARAMETER temperature 0.7
+PARAMETER top_p 0.9
+PARAMETER num_ctx 4096
+
+# System prompt for coding
+SYSTEM """You are CodeLlama, an expert coding assistant. You help users write, debug, and understand code."""

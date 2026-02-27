@@ -1,0 +1,25 @@
+# Sync Configuration
+
+# Files to include in sync
+include:
+  - bin/
+  - ai-tools/
+  - config/
+  - projects/
+  - docs/
+  - models/qwen/Qwen2.5-Coder-3B*
+
+# Files to exclude from sync
+exclude:
+  - models/*.gguf
+  - .git/
+  - logs/
+  - .backups/
+  - temp/
+  - projects/sandbox/*
+
+# Sync options
+options:
+  verify_copy: true
+  create_manifest: true
+  max_backups: 5

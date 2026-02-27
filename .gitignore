@@ -1,0 +1,11 @@
+# Model files (too large for GitHub)  
+*.gguf  
+models/**/*.gguf  
+.backups/  
+logs/  
+__pycache__/  
+*.pyc  
+.DS_Store  
+Thumbs.db  
+*.log  
+ai-tools/safe-workspace/  
